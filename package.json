@@ -1,9 +1,21 @@
 {
   "name": "bfportal-vitest-mock",
-  "version": "0.0.11",
-  "description": "",
+  "version": "0.0.12",
+  "description": "bfportal-vitest-mock is a mocking tool that makes it easier to unit test Battlefield 6 Portal (BF Portal) TypeScript scripts with Vitest.",
   "license": "MIT",
   "author": "PlumRice",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/link1345/bfportal-vitest-mock"
+  },
+  "keywords": [
+    "vitest",
+    "test"
+  ],
+  "bugs": {
+    "url": "https://github.com/link1345/bfportal-vitest-mock/issues"
+  },
+  "homepage": "https://github.com/link1345/bfportal-vitest-mock",
   "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
