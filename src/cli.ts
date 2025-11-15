@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import { generateModSupport } from "./generate";
 
 function printHelp() {

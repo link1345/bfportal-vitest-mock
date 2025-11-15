@@ -1,12 +1,12 @@
 {
   "name": "bfportal-vitest-mock",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "",
   "license": "MIT",
   "author": "PlumRice",
   "type": "module",
   "main": "dist/index.js",
-  "types": "dist/src/index.d.ts",
+  "types": "dist/index.d.ts",
   "publishConfig": {
     "access": "public"
   },
