@@ -12,12 +12,12 @@
     },
     "typeRoots": [
       "./code/mod",
-      "./node_modules/@types",
-      "bfportal-vitest-mock.generated"
+      "./node_modules/@types"
     ],
     "outDir": "./dist"
   },
   "exclude": [
+    "bfportal-vitest-mock.generated.ts",
     "test/vitest.config.ts",
     "dist"
   ]

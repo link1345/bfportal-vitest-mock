@@ -20,7 +20,7 @@ export default defineConfig([
         },
         "settings": {
             // ✅ 以下で import 解析をスキップしたいモジュールを列挙
-            "import/ignore": ["^modlib$", "^mod$"],
+            "import/ignore": ["^modlib$", "^mod$", "bfportal-vitest-mock.generated.ts"],
         }
     },
     tseslint.configs.recommended,
