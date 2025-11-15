@@ -88,7 +88,3 @@ export function setupGlobalModMock<
   (globalThis as any).mod = merged;
   return merged;
 }
-
-export function createFake<T extends mod.Object>(): T {
-  return { __test: true } as unknown as T;
-}

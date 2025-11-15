@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+        "target": "esnext",
+        "module": "nodenext",
+        "moduleResolution": "nodenext",
+        "resolveJsonModule": true,
+        "strict": true,
+        "typeRoots": [
+            "./node_modules/@types"
+        ],
+        "rootDirs": [
+            "./src/*"
+        ],
+        "outDir": "./dist"
+    },
+    "include": [
+        "./src",
+    ],
+    "exclude": [
+        "bfportal-vitest-mock.generated.ts",
+        "test/vitest.config.ts",
+        "dist",
+        "code"
+    ]
+}

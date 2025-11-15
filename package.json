@@ -18,7 +18,7 @@
     "bfportal-vitest-mock": "dist/cli.js"
   },
   "scripts": {
-    "build": "tsc -d",
+    "build": "tsc -p tsconfig.build.json -d",
     "lint": "npx eslint ./src",
     "lint:fix": "npx eslint ./src --fix",
     "check:cli": "tsx src/cli.ts generate --sdk ./code/mod/index.d.ts --out ./bfportal-vitest-mock.generated.ts",

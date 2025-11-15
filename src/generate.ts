@@ -48,7 +48,6 @@ export function generateModSupport(options: GenerateOptions) {
 import {
   createModMockFor,
   setupGlobalModMock,
-  createFake,
   type ModMockFor,
   type ImplMapFor,
 } from "bfportal-vitest-mock";
@@ -81,7 +80,11 @@ import {
 		"export const setupBfPortalMock = (impls?: BfPortalModImpls, extra?: Partial<BfPortalMod>) =>\n" +
 		"  setupGlobalModMock<BfPortalMod, typeof modFnNames>(modFnNames, impls ?? {}, extra);\n",
 	);
-	bodyLines.push(`export { createFake };\n`);
+	bodyLines.push(
+		"export function createFake<T extends (mod.Object | mod.Array)>(): T {\n" +
+		"  return { __test: true } as unknown as T;\n" +
+		"}\n"
+	);
 
 	const content = header + bodyLines.join("\n");
 	writeFileSync(outAbs, content, "utf8");

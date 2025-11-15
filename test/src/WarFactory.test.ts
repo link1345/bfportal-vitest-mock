@@ -1,8 +1,8 @@
 import { describe, it, expect, beforeEach, vi } from 'vitest';
-import { OnPlayerJoinGame } from './WarFactory';
-import { setupBfPortalMock, type BfPortalModMock, createFake } from "../../bfportal-vitest-mock.generated";
+import { OnPlayerJoinGame } from './WarFactory.js';
+import { setupBfPortalMock, type BfPortalModMock, createFake } from "../../bfportal-vitest-mock.generated.js";
 
-import stringkeys from "./strings.json";
+import stringkeys from "./strings.json" with { type: "json" };
 
 export let modMock: BfPortalModMock;
 
