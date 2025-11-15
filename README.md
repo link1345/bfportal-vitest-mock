@@ -1,5 +1,11 @@
 # bfportal-vitest-mock
 
+![NPM Version](https://img.shields.io/npm/v/bfportal-vitest-mock)
+![NPM License](https://img.shields.io/npm/l/bfportal-vitest-mock)
+![NPM Downloads](https://img.shields.io/npm/dw/bfportal-vitest-mock)
+![GitHub last commit](https://img.shields.io/github/last-commit/link1345/bfportal-vitest-mock)
+![Discord](https://img.shields.io/discord/1329272750099136552)
+
 > [※ 日本語説明ページはこちらです。](./README-JP.md)
 
 `bfportal-vitest-mock` is a mocking tool that makes it easier to unit test Battlefield 6 Portal (BF Portal) TypeScript scripts with Vitest.
