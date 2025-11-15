@@ -171,13 +171,3 @@ describe("OnPlayerJoinGame", () => {
 
 具体的なテストの書き方や、`mod.stringkeys` のモック方法、`mod.Message` のオーバーロードをどう扱っているかなどは、
 `test/src` 以下のファイルを参考にしてみてください。
-
-## まとめ
-
-`bfportal-vitest-mock` は BF Portal の mod を Vitest でモックしやすくするためのツールです。
-
-SDK の `.d.ts` を渡して `generate` することで、バージョンごとに対応したモック環境を自動生成します。
-
-テストセットアップで `setupBfPortalMock` を呼べば、あとは `mod` と `modMock` を使って普段どおりテストを書くだけです。
-
-細かい使い方や拡張の仕方は、`test/src` のサンプルやソースコードを参考にしてください。

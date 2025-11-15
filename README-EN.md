@@ -178,15 +178,3 @@ This repository includes several working sample tests:
 - Example of a generated file for `bfportal-vitest-mock`: `test-support/bfportal-vitest-mock.generated.ts`
 
 For concrete examples of how to write tests, how to mock `mod.stringkeys`, and how to handle the overloads of `mod.Message`, please check the files under `test/src`.
-
-
-## Summary
-
-`bfportal-vitest-mock` is a tool that makes it easier to mock BF Portal's `mod` namespace when testing with Vitest.
-
-By passing the SDK `.d.ts` and running `generate`, you can automatically create a mock environment that matches each SDK version.
-
-Once you call `setupBfPortalMock` in your test setup, you can just write tests using `mod` and `modMock` as you normally would.
-
-For more details and extension ideas, see the samples under `test/src` and the source code in this repository.
-
