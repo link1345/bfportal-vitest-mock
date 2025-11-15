@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { generateModSupport } from "./generate";
+import { generateModSupport } from "./generate.js";
 
 function printHelp() {
     console.log(

@@ -4,4 +4,4 @@ export {
     createFake,
     type ModMockFor,
     type ImplMapFor,
-} from "./runtime";
+} from "./runtime.js";
