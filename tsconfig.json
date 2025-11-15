@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "strict": true,
+    "paths": {
+      "modlib": [
+        "./code/modlib"
+      ]
+    },
+    "typeRoots": [
+      "./code/mod",
+      "./node_modules/@types"
+    ],
+    "outDir": "./dist"
+  },
+  "exclude": [
+    "test/vitest.config.ts",
+    "dist"
+  ]
+}

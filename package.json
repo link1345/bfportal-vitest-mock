@@ -1,0 +1,39 @@
+{
+  "name": "bfportal-vitest-mock",
+  "version": "0.0.1",
+  "description": "",
+  "license": "ISC",
+  "author": "PlumRice",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/src/index.d.ts",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "bin": {
+    "bfportal-vitest-mock": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc -d",
+    "lint": "npx eslint ./src",
+    "lint:fix": "npx eslint ./src --fix",
+    "prepare": "npm run build",
+    "check:cli": "tsx src/cli.ts generate --sdk ./code/mod/index.d.ts --out ./bfportal-vitest-mock.generated.ts",
+    "check:test": "vitest -c ./test/vitest.config.ts"
+  },
+  "dependencies": {
+    "modlib": "./code/modlib",
+    "ts-morph": "^27.0.2",
+    "vitest": "^4.0.8"
+  },
+  "devDependencies": {
+    "@types/eslint": "^9.6.1",
+    "@types/node": "^24.10.1",
+    "@typescript-eslint/parser": "^8.46.3",
+    "eslint": "^9.39.1",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.46.3"
+  }
+}
