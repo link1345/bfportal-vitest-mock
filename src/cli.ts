@@ -35,7 +35,7 @@ function main() {
     let outPath = "./test-support/bfportal-vitest-mock.generated.ts";
     let namespaceName = "mod";
 
-    for (let i = 0; i < args.length; i++) {
+    for (let i = 1; i < args.length; i++) {
         const arg = args[i];
         if (arg === "--sdk") {
             sdkPath = args[++i];
