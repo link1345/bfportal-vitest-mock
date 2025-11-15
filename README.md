@@ -162,19 +162,18 @@ describe("OnPlayerJoinGame", () => {
 `expect(modMock.Message).toHaveBeenCalledTimes(1)`
 など、Vitest のモック API をそのまま使えます
 
-書き方の見本
+## 書き方の見本
 このリポジトリには、実際に動作するサンプルテストをいくつか用意しています。
 
-テストコード例: `test/src/*.test.ts`
-
-テスト対象のサンプルスクリプト: `src/*.ts`
-
-`bfportal-vitest-mock` 用の生成ファイル例: `test-support/bfportal-vitest-mock.generated.ts`
+* テストコード例: `test/src/*.test.ts`
+* テスト対象のサンプルスクリプト: `src/*.ts`
+* `bfportal-vitest-mock` 用の生成ファイル例: `test-support/bfportal-vitest-mock.generated.ts`
 
 具体的なテストの書き方や、`mod.stringkeys` のモック方法、`mod.Message` のオーバーロードをどう扱っているかなどは、
 `test/src` 以下のファイルを参考にしてみてください。
 
 ## まとめ
+
 `bfportal-vitest-mock` は BF Portal の mod を Vitest でモックしやすくするためのツールです。
 
 SDK の `.d.ts` を渡して `generate` することで、バージョンごとに対応したモック環境を自動生成します。
