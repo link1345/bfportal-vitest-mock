@@ -12,7 +12,8 @@
     },
     "typeRoots": [
       "./code/mod",
-      "./node_modules/@types"
+      "./node_modules/@types",
+      "bfportal-vitest-mock.generated"
     ],
     "outDir": "./dist"
   },
