@@ -14,8 +14,13 @@
       "./code/mod",
       "./node_modules/@types"
     ],
+    "rootDir": "./src",
     "outDir": "./dist"
   },
+  "include": [
+    "./src",
+    "./code"
+  ],
   "exclude": [
     "bfportal-vitest-mock.generated.ts",
     "test/vitest.config.ts",
